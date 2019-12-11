@@ -1,11 +1,11 @@
 package com.cherrow.jpa;
 
-public class Application {
-    public String getGreeting() {
-        return "Hello world.";
-    }
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
+public class Application {
     public static void main(String[] args) {
-        System.out.println(new Application().getGreeting());
+        SpringApplication.run(Application.class);
     }
 }
